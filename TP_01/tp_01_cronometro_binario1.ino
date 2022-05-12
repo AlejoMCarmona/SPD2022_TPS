@@ -8,13 +8,13 @@
 //--- FIN DEFINES--//
 
 //--- DECLARACIONES DE FUNCIONES ---//
-/// pasarABinario
+/// void pasarABinario
 /// Convierte números enteros a numeros binarios.
 /// @param numero - numero a convertir a binario.
 /// @param numeroBinario - arreglo donde se almacenará el número binario.
 void pasarABinario(int numero, int numeroBinario[]);
 
-/// pasaronLosSegundos
+/// bool pasaronLosSegundos
 /// Determina si paso el tiempo necesario, expresado en milisegundos.
 /// @param tiempoAPasar - milisegundos que representan el tiempo que debe transcurrir.
 /// return
@@ -22,17 +22,17 @@ void pasarABinario(int numero, int numeroBinario[]);
 ///   false - si aún no transcurrieron los milisegundos necesarios.
 bool pasaronLosSegundos(unsigned int tiempoAPasar);
 
-/// controlarLeds
+/// void controlarLeds
 /// Controla el encendido y el apagado de los leds, en base al número binario a representar.
 /// @param numeroBinario - numero binario a representar.
 void controlarLeds(int numeroBinario[]);
 
-/// reiniciarNumeroBinario
+/// void reiniciarNumeroBinario
 /// Reinicia el arreglo que representa el número binario, dejando todos sus campos (bits) a cero.
 /// @param numeroBinario - numero binario al que se le va a reiniciar su valor.
 void reiniciarNumeroBinario(int numeroBinario[]);
 
-/// mostrarNumero
+/// void mostrarNumero
 /// Muestra a través del monitor en serie el segundo que se está contando en ese momento, junto con su representación en binario.
 /// @param segundos - segundo que está transcurriendo en ese momento.
 /// @param numeroBinario - representación binaria del segundo en cuestión.
